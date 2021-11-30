@@ -2,7 +2,7 @@
 #![no_main]
 #![no_std]
 
-use aux5::{Delay, DelayMs, LedArray, OutputSwitch, entry};
+use aux5::{entry, Delay, DelayMs, LedArray, OutputSwitch};
 
 #[entry]
 fn main() -> ! {

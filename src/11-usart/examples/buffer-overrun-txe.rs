@@ -14,9 +14,7 @@ fn main() -> ! {
         // wait until it's safe to write to TDR
         while usart1.isr.read().txe().bit_is_clear() {} // <- NEW!
 
-        usart1
-            .tdr
-            .write(|w| w.tdr().bits(u16::from(*byte)));
+        usart1.tdr.write(|w| w.tdr().bits(u16::from(*byte)));
     }
     let elapsed = instant.elapsed(); // in ticks
 

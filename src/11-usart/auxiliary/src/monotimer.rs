@@ -1,10 +1,7 @@
 use stm32f3_discovery::stm32f3xx_hal as hal;
 
 use cortex_m::peripheral::DWT;
-use hal::{
-    rcc::Clocks,
-    time::rate::Hertz,
-};
+use hal::{rcc::Clocks, time::rate::Hertz};
 
 /// A monotonic nondecreasing timer. This is a resurrection of MonoTimer from
 /// the stm32f3xx-hal where it got removed after 0.6.1.
