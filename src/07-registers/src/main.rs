@@ -2,7 +2,7 @@
 #![no_std]
 
 #[allow(unused_imports)]
-use aux7::{entry, iprintln, ITM, RegisterBlock};
+use aux7::{entry, iprintln, RegisterBlock, ITM};
 
 #[entry]
 fn main() -> ! {
